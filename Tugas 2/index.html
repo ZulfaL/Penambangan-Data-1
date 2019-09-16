@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tugas 2 - My Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Tugas 2</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#mengukur-jarak-data">Mengukur Jarak Data</a></li>
+            <li><a href="#mengukur-jarak-data-tipe-numerik">Mengukur Jarak Data Tipe Numerik</a></li>
+            <li><a href="#mengukur-jarak-data-tipe-binary">Mengukur Jarak Data Tipe Binary</a></li>
+            <li><a href="#mengukur-jarak-data-tipe-categorical">Mengukur Jarak Data Tipe Categorical</a></li>
+            <li><a href="#mengukur-jarak-data-tipe-ordinal">Mengukur Jarak Data Tipe Ordinal</a></li>
+            <li><a href="#mengukur-jarak-data-tipe-campuran">Mengukur Jarak Data Tipe Campuran</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Zulfa Lailatul Marom (180411100134)</p>
+<h1 id="mengukur-jarak-data">Mengukur Jarak Data</h1>
+<h3 id="mengukur-jarak-data-tipe-numerik"><strong>Mengukur Jarak Data Tipe Numerik</strong></h3>
+<p>Kemiripan(similarity) adalah ukuran numerik dimana objeknya mirip, dengan nilai 0 jika tidak mirip dan nilai 1 jika itu mirip. Sementara ketidakmiripan (dissimilarity)
+adalah derajat numerik dimana dua objek yang berbeda, jangkauan nilai 0 sampai 1 atau
+bahkan sampai ∞. Istilah ketidakmiripan bisa disebut juga sebagai ukuran jarak(distance) antara dua data.</p>
+<p>Terdapat banyak cara yang dapat digunakan untuk menghitung jarak (ketidakmiripan) dua objek dengan beberapa atribut, diantaranya:</p>
+<ul>
+<li><em>Euclidean Distance</em></li>
+</ul>
+<p>Euclidean distance adalah perhitungan jarak dari 2 buah titik dalam Euclidean space, dengan perhitungan sebagai berikut.</p>
+<p><img alt="1568346276348.png" src="../1568346276348.png" /></p>
+<ul>
+<li><em>Manhattan Distance (city block distance)</em></li>
+</ul>
+<p>Jarak Manhattan adalah jarak dari suatu titik menuju titik lainnya di bidang Cartesian dengan menyusuri bagian vertikal dan horizontal, tanpa pernah kembali. </p>
+<p><img alt="1568346779908" src="../1568346779908.png" /></p>
+<ul>
+<li><em>Minkowski</em></li>
+</ul>
+<p>Jarak Minkowski adalah metrik dalam ruang vektor normed yang dapat dianggap sebagai generalisasi dari jarak Euclidean dan jarak Manhattan .</p>
+<p><img alt="1568347036039" src="../1568347036039.png" /></p>
+<ul>
+<li><em>Average Distance</em></li>
+</ul>
+<p>adalah versi modifikasi dari jarak Euclidean untuk memperbaiki hasil.</p>
+<p><img alt="1568347257356" src="../1568347257356.png" /></p>
+<ul>
+<li><em>Weighted Euclidean Distance</em></li>
+</ul>
+<p>adalah versi modifikasi lain dari jarak Euclidean Distance.</p>
+<p><img alt="1568347442374" src="../1568347442374.png" /></p>
+<ul>
+<li><em>Chord Distance</em></li>
+</ul>
+<p><img alt="1568347638170" src="../1568347638170.png" /></p>
+<p><img alt="1568347653874" src="../1568347653874.png" /></p>
+<ul>
+<li><em>Mahalanobis Distance</em></li>
+</ul>
+<p>Mahalanobis distance adalah suatu metode statistika yang digunakan untuk mendapatkan suatu data dengan jarak tertentu terhadap mean data tersebut sehingga diperoleh suatu penyebaran data yang memiliki pola terhadap nilai mean. Berikut adalah rumus dari mahalanobis distance:</p>
+<p><img alt="1568347893009" src="../1568347893009.png" /></p>
+<p><img alt="1568347941001" src="../1568347941001.png" /></p>
+<ul>
+<li><em>Cosine measure</em></li>
+</ul>
+<p>Metode ini digunakan untuk menghitung dua objek (vektor) dokumen.</p>
+<p><img alt="1568348212742" src="../1568348212742.png" /></p>
+<p><img alt="1568348248771" src="../1568348248771.png" /></p>
+<p><img alt="1568348264903" src="../1568348264903.png" /></p>
+<ul>
+<li><em>Pearson correlation</em></li>
+</ul>
+<p><img alt="1568348317774" src="../1568348317774.png" /></p>
+<h3 id="mengukur-jarak-data-tipe-binary"><strong>Mengukur Jarak Data Tipe Binary</strong></h3>
+<p>Variabel biner adalah variabel yang hanya mempunyai hanya dua kemungkinan nilai yaitu 0 atau 1, “ya” atau “tidak”, “benar” atau “salah”. Contoh atribut tes kehamilan dari pasien Misalnya 1 menunjukkan bahwa pasien tersebut hamil, sedangkan 0 menunjukkan bahwa pasien tersebut sedang tidak hamil.</p>
+<p>Pada atribut biner simetris, untuk nilai bobotnya sama. Jika i dan j dinyatakan sebagai atribut biner simetris, maka antar i dan j adalah </p>
+<p><img alt="1568350323763" src="../1568350323763.png" /></p>
+<p>Pada atribut biner asimetris, kemungkinan yang bernilai positif(1) dianggap lebih signifikan daripada yang bernilai negatif(0) sehingga kecocokan negatif akan diabaikan. berikut perhitungannya.</p>
+<p><img alt="1568350768072" src="../1568350768072.png" /></p>
+<p>Biner asimetris kesamaan antara objek ii dan jj dapat dihitung dengan:</p>
+<p><img alt="1568352060852" src="../1568352060852.png" /></p>
+<p>Untuk menghitung jarak antar variabel biner biasanya digunakan metode:</p>
+<ul>
+<li>Simple Matching Distance</li>
+<li>Jaccard Distance</li>
+<li>Hamming Distance</li>
+</ul>
+<h3 id="mengukur-jarak-data-tipe-categorical"><strong>Mengukur Jarak Data Tipe Categorical</strong></h3>
+<ul>
+<li>
+<h6 id="overlay-metric"><em>Overlay Metric</em></h6>
+</li>
+</ul>
+<p>Ketika semua atribut adalah bertipe nominal, ukuran jarak yang paling sederhana adalah dengan Ovelay Metric (OM) yang dinyatakan dengan</p>
+<p><img alt="1568352419705" src="../1568352419705.png" /></p>
+<p><img alt="1568352445065" src="../1568352445065.png" /></p>
+<ul>
+<li>
+<h6 id="value-different-metric-vdm"><em>Value Different Metric (VDM)</em></h6>
+</li>
+</ul>
+<p><img alt="1568352525476" src="../1568352525476.png" /></p>
+<p><img alt="1568352551158" src="../1568352551158.png" /></p>
+<p>kemudian dikembangkan oleh Myles dan Hand dan didefinisikan dengan</p>
+<p><img alt="1568352615829" src="../1568352615829.png" /></p>
+<p><img alt="1568352650558" src="../1568352650558.png" /></p>
+<ul>
+<li>
+<h6 id="minimum-risk-metricmrm"><em>Minimum Risk Metric(MRM)</em></h6>
+</li>
+</ul>
+<p><img alt="1568352707402" src="../1568352707402.png" /></p>
+<h3 id="mengukur-jarak-data-tipe-ordinal">Mengukur Jarak Data Tipe Ordinal</h3>
+<p>Nilai/atribut yang bisa dibedakan dan diurutkan dari objek yang kita ukur itu disebut Ordinal. Dalam hal ini kita bisa mengatakan A "lebih" baik dibanding B atau B "kurang" dari A, namun kita tidak bisa mengatakan seberapa banyak lebihnya A dibanding B. Dengan demikian, batas satu variasi nilai ke variasi yang lain tidak jelas sehingga yang dapat dibandingkan hanyalah apakah nilai tersebut lebih tinggi, sama, atau lebih rendah daripada nilai yang lain. Contohnya tingkat keparahan penyakit, bahwa pasien yang sedang sakit tersebut mengidap penyakit yang parah atau penyakit yang tidak parah.</p>
+<h3 id="mengukur-jarak-data-tipe-campuran">Mengukur Jarak Data Tipe Campuran</h3>
+<p>Terkadang ditemukan bahwa atribut (fitur) pada objek (vektor) terdiri dari tipe
+data campuran (tidak seragam). Tidak selalu semua atribut bertipe numerik (interval
+atau rasio) atau bertipe kategoris (nominal dan ordinal). Untuk menghitung nilai
+kemiripan objek dengan atribut campuran kita bisa gunakan persamaan berikut:</p>
+<p><img alt="1568354380960" src="../1568354380960.png" /></p>
+<p>si merupakan ukuran kemiripan diantara fitur ke-I dari x dan y, sedangkan wi adalah
+faktor bobot yang berkorelasi dengan fitur ke-1. Cara menentukan faktor bobot adalah
+dengan ketentukan sebagai berikut:
+wi = 0 , apabila nilai fitur-I dari objek x dan y tidak teridentifikasi.
+wi = 0 , apabila nilai si = 0.
+wi = 1 , apabila selain dua syarat di atas.</p>
+<h5 id="contoh-program">Contoh Program</h5>
+<pre><code class="python">import pandas as pd
+from scipy import stats
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+</code></pre>
+
+<pre><code class="python">data = pd.read_csv(&quot;Abalone.csv&quot;,delimiter=&quot;;&quot;)
+k=data.iloc[1:7]
+k
+</code></pre>
+
+<pre><code class="python">numerical=[8]
+ordinal=[1,7]
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+     [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[0]+[0]+[0]+[0],
+    [&quot;v1-v3&quot;]+[0]+[0]+[0]+[0]+[0],
+    [&quot;v2-v3&quot;]+[0]+[0]+[0]+[0]+[0],
+    [&quot;v3-v4&quot;]+[0]+[0]+[0]+[0]+[0],
+    [&quot;v4-v5&quot;]+[0]+[0]+[0]+[0]+[0],
+    [&quot;v5-v6&quot;]+[0]+[0]+[0]+[0]+[0]
+
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<h6 id="jarak-numerik">Jarak Numerik</h6>
+<pre><code class="python">def chordDist(v1,v2,jnis):
+    jmlh=0
+    normv1=0
+    normv2=0
+    for x in range (len(jnis)):
+        normv1=normv1+(int(k.values.tolist()[v1][jnis[x]])**2)
+        normv2=normv2+(int(k.values.tolist()[v1][jnis[x]])**2)
+        jmlh=jmlh+(int(k.values.tolist()[v1][jnis[x]])*int(k.values.tolist()[v2][jnis[x]]))
+    return ((2-(2*jmlh/((normv1**0.5)*(normv2**0.5)))**0.5))
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,1,numerical))]+[0]+[0]+[0],
+    [&quot;v1-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,2,numerical))]+[0]+[0]+[0],
+    [&quot;v2-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(1,2,numerical))]+[0]+[0]+[0],
+    [&quot;v3-v4&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[0]+[0]+[0],
+    [&quot;v4-v5&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(3,4,numerical))]+[0]+[0]+[0],
+    [&quot;v5-v6&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[0]+[0]+[0],
+
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<h6 id="jarak-ordinal">Jarak Ordinal</h6>
+<pre><code class="python">def ordDist(v1,v2,jns):
+    jmlh=0
+    for x in range (len(jns)):
+        z1=int(k.values.tolist()[v1][jns[x]])-1
+        z2=int(k.values.tolist()[v2][jns[x]])-1
+        jmlh=jmlh+chordDist(z1,z2,jns)
+    return (jmlh)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,1,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,1,ordinal))]+[categoricalDist(0,1,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v1-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,2,ordinal))]+[categoricalDist(0,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v2-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(1,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(1,2,ordinal))]+[categoricalDist(1,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v3-v4&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(2,3,ordinal))]+[categoricalDist(2,3,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v4-v5&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(3,4,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(3,4,ordinal))]+[categoricalDist(3,4,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v5-v6&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(4,5,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(4,5,ordinal))]+[categoricalDist(4,5,categorical)]+[binaryDist(0,1,binary)],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<h6 id="jarak-categorical">Jarak Categorical</h6>
+<pre><code class="python">def categoricalDist(v1,v2,jnis):
+    jmlh=0
+    for x in range (len(jnis)):
+        if (k.values.tolist()[v1][jnis[x]])!=(k.values.tolist()[v2][jnis[x]]):
+            jmlh=jmlh+1
+    return (jmlh)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,1,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,1,ordinal))]+[categoricalDist(0,1,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v1-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,2,ordinal))]+[categoricalDist(0,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v2-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(1,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(1,2,ordinal))]+[categoricalDist(1,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v3-v4&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(2,3,ordinal))]+[categoricalDist(2,3,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v4-v5&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(3,4,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(3,4,ordinal))]+[categoricalDist(3,4,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v5-v6&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(4,5,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(4,5,ordinal))]+[categoricalDist(4,5,categorical)]+[binaryDist(0,1,binary)],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<h6 id="jarak-binary">Jarak Binary</h6>
+<pre><code class="python">def binaryDist(v1,v2,jnis):
+    q=0
+    r=0
+    s=0
+    t=0
+    for x in range (len(jnis)):
+        if (int(k.values.tolist()[v1][jnis[x]]))==1 and (int(k.values.tolist()[v2][jnis[x]]))==1:
+            q=q+1
+        elif (int(k.values.tolist()[v1][jnis[x]]))==1 and (int(k.values.tolist()[v2][jnis[x]]))==2:
+            r=r+1
+        elif (int(k.values.tolist()[v1][jnis[x]]))==2 and (int(k.values.tolist()[v2][jnis[x]]))==1:
+            s=s+1
+        else:
+            t=t+1
+    return ((r+s)/(q+r+s+t))
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,1,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,1,ordinal))]+[categoricalDist(0,1,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v1-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,2,ordinal))]+[categoricalDist(0,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v2-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(1,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(1,2,ordinal))]+[categoricalDist(1,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v3-v4&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(2,3,ordinal))]+[categoricalDist(2,3,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v4-v5&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(3,4,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(3,4,ordinal))]+[categoricalDist(3,4,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v5-v6&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(4,5,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(4,5,ordinal))]+[categoricalDist(4,5,categorical)]+[binaryDist(0,1,binary)],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<h6 id="jarak-campuran">Jarak Campuran</h6>
+<pre><code class="python">def jarak(v1,v2):
+    return ((chordDist(v1,v2,numerical)+ordDist(v1,v2,ordinal)+categoricalDist(v1,v2,categorical)+binaryDist(v1,v2,binary))/4)
+</code></pre>
+
+<pre><code class="python">from IPython.display import HTML, display
+import tabulate
+table=[
+    [&quot;Data&quot;]+[&quot;Jarak&quot;]+[&quot;Numeric&quot;]+[&quot;Ordinal&quot;]+[&quot;Categorical&quot;]+[&quot;Binary&quot;],
+    [&quot;v1-v2&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,1,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,1,ordinal))]+[categoricalDist(0,1,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v1-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(0,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(0,2,ordinal))]+[categoricalDist(0,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v2-v3&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(1,2,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(1,2,ordinal))]+[categoricalDist(1,2,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v3-v4&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(2,3,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(2,3,ordinal))]+[categoricalDist(2,3,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v4-v5&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(3,4,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(3,4,ordinal))]+[categoricalDist(3,4,categorical)]+[binaryDist(0,1,binary)],
+    [&quot;v5-v6&quot;]+[0]+[&quot;{:.2f}&quot;.format(chordDist(4,5,numerical))]+[&quot;{:.2f}&quot;.format(ordDist(4,5,ordinal))]+[categoricalDist(4,5,categorical)]+[binaryDist(0,1,binary)],
+    ]
+
+display(HTML(tabulate.tabulate(table, tablefmt='html')))
+</code></pre>
+
+<p>Terimakasih, sekian penjelasan tentang Mengukur Jarak Data. Semoga dapat bermanfaat untuk kalian. Jangan lupa dicoba dan dipelajari lebih dalam:)</p>
+<p>Sumber : </p>
+<p>http://jauhar-aribi.blogspot.com/2007/03/mahalanobis-distance.html</p>
+<p><a href="https://repository.unikom.ac.id/49057/1/Pertemuan 4 - Materi [DM - 2016].pdf">https://repository.unikom.ac.id/49057/1/Pertemuan%204%20-%20Materi%20%5BDM%20-%202016%5D.pdf</a></p>
+<p>https://blogs.itb.ac.id/anugraha/2014/09/10/teori-pengukuran-jarak/</p>
+<p>https://en.wikipedia.org/wiki/Minkowski_distance</p>
+<p><a href="https://repository.unikom.ac.id/49057/1/Pertemuan 4 - Materi [DM - 2016].pdf">https://repository.unikom.ac.id/49057/1/Pertemuan%204%20-%20Materi%20%5BDM%20-%202016%5D.pdf</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
